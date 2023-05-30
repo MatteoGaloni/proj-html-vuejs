@@ -1,14 +1,13 @@
 <script>
 export default {
-  name: "HelloWorld"
+  name: "AppHeader"
 }
 
 </script>
 
 <template>
   <div class="test">
-    <h1>HELLO VUE TEST</h1>
-    <p>test</p>
+    <h1>CIAO SONO L'HEADER</h1>
   </div>
 </template>
 
