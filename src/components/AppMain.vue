@@ -1,6 +1,6 @@
 <script>
+import Services from './Services.vue'
 
-import Jumbotron from './Jumbotron.vue'
 
 
 
@@ -8,11 +8,17 @@ export default {
   name: "AppMain",
 
   components: {
-    Jumbotron,
+    Services,
+
+  },
+
+  props: {
+    servicesList: Array,
   },
 
   data() {
     return {
+
 
     }
   },
@@ -25,12 +31,22 @@ export default {
 
 <template>
   <main>
-    <Jumbotron />
+    <Services :servicesList="servicesList" />
+    <div class="test">
+      <h2>CIAOOOOOOOOOOOOOOOOOOOOOOOOoooooo</h2>
+      <div></div>
+
+    </div>
   </main>
 </template>
 
 <style scoped lang="scss">
 main {
   background-color: pink;
+}
+
+.test {
+  background-color: black;
+  min-height: 200px;
 }
 </style>
