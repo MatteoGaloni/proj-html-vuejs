@@ -20,7 +20,9 @@ export default {
         number: "+1 (305) 1234-5678",
         mail: "hello@example.com",
         address: "Main Avenue, 987",
-      }
+      },
+
+      servicesList: ["Audit & assurance", "Financial Advisory", "Analytics and M&A", "Middle Marketing", "Legal Consulting", "Regulatory Risk"]
 
     }
   },
@@ -33,7 +35,7 @@ export default {
 
 <template>
   <AppHeader :contacts="contacts" />
-  <AppMain />
+  <AppMain :servicesList="servicesList" />
   <Cards />
   <AppFooter />
 </template>

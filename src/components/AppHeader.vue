@@ -1,6 +1,15 @@
 <script>
+import Jumbotron from './Jumbotron.vue'
+
+
+
 export default {
   name: "AppHeader",
+
+  components: {
+    Jumbotron,
+  },
+
   props: {
     contacts: Object,
   },
@@ -35,7 +44,7 @@ export default {
         </ul>
       </div>
     </div>
-
+    <Jumbotron />
   </header>
 </template>
 
@@ -47,10 +56,4 @@ header {
     padding: 0.2rem 0;
   }
 }
-
-// .nav_link {
-//   text-decoration: none;
-//   padding: 1rem;
-//   color: grey
-// }
 </style>

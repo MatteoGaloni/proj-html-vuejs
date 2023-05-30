@@ -48,6 +48,7 @@ export default {
   min-height: 700px;
   background-image: url(../assets/images/img/bg-parallax.png);
   background-position: center;
+  background-color: pink;
 
   .jumbo_img {
     width: 100%;
