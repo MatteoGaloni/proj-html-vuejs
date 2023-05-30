@@ -11,13 +11,27 @@ export default {
     AppMain,
     Cards,
     AppFooter,
+  },
+
+  data() {
+    return {
+      contacts: {
+        number: "+1 (305) 1234-5678",
+        mail: "hello@example.com",
+        address: "Main Avenue, 987",
+      }
+
+    }
+  },
+
+  methods: {
   }
 }
 
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader :contacts="contacts" />
   <AppMain />
   <Cards />
   <AppFooter />

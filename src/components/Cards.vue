@@ -1,6 +1,15 @@
 <script>
 export default {
-  name: "Cards"
+  name: "Cards",
+
+  data() {
+    return {
+
+    }
+  },
+
+  methods: {
+  }
 }
 
 </script>

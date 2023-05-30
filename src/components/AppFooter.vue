@@ -1,6 +1,15 @@
 <script>
 export default {
-  name: "AppFooter"
+  name: "AppFooter",
+
+  data() {
+    return {
+
+    }
+  },
+
+  methods: {
+  }
 }
 
 </script>

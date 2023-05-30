@@ -1,6 +1,15 @@
 <script>
 export default {
-  name: "AppMain"
+  name: "AppMain",
+
+  data() {
+    return {
+
+    }
+  },
+
+  methods: {
+  }
 }
 
 </script>
