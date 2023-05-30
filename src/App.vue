@@ -1,5 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import Jumbotron from './components/Jumbotron.vue'
 import AppMain from './components/AppMain.vue'
 import Cards from './components/Cards.vue'
 import AppFooter from './components/AppFooter.vue'

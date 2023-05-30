@@ -27,11 +27,11 @@ export default {
       </div>
       <div class="right_nav">
         <ul class="d-flex list-unstyled">
-          <li><a class="nav_link" href="">{{ this.contacts.number }}</a></li>
-          <li><a class="nav_link" href="">{{ this.contacts.mail }}</a></li>
-          <li><a class="nav_link" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a class="nav_link" href=""><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a class="nav_link" href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a class="link" href="">{{ this.contacts.number }}</a></li>
+          <li><a class="link" href="">{{ this.contacts.mail }}</a></li>
+          <li><a class="link" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a class="link" href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a class="link" href=""><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
       </div>
     </div>
@@ -48,9 +48,9 @@ header {
   }
 }
 
-.nav_link {
-  text-decoration: none;
-  padding: 1rem;
-  color: grey
-}
+// .nav_link {
+//   text-decoration: none;
+//   padding: 1rem;
+//   color: grey
+// }
 </style>

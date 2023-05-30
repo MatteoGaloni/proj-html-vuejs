@@ -1,6 +1,15 @@
 <script>
+
+import Jumbotron from './Jumbotron.vue'
+
+
+
 export default {
   name: "AppMain",
+
+  components: {
+    Jumbotron,
+  },
 
   data() {
     return {
@@ -15,11 +24,13 @@ export default {
 </script>
 
 <template>
-  <h1>SONO IL MAIN</h1>
+  <main>
+    <Jumbotron />
+  </main>
 </template>
 
 <style scoped lang="scss">
-h1 {
-  color: grey;
+main {
+  background-color: pink;
 }
 </style>
