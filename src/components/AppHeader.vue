@@ -23,7 +23,7 @@ export default {
 <template>
   <header>
     <!-- top notification bar -->
-    <div id="top_bar" class="container d-flex justify-content-between">
+    <div id="top_bar" class="my_container d-flex justify-content-between">
       <div class="left_nav">
         <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
       </div>
@@ -39,7 +39,7 @@ export default {
     </div>
     <!-- ****************************************** -->
     <!-- navigation bar -->
-    <div id="nav_bar" class="d-flex justify-content-between">
+    <div id="nav_bar" class="my_container d-flex justify-content-between">
       <div class="nav_left">
         <img id="nextGen_logo" src="../assets/images/svg/svg-7.svg" alt="nav_logo">
       </div>

@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div id="services_container" class="container">
+  <div id="services_container" class="my_container">
     <h1>Excellence in Services</h1>
     <div class="d-flex">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid aperiam obcaecati ipsam a culpa amet, odio
@@ -58,6 +58,7 @@ export default {
       }
 
     }
+
   }
 }
 </style>

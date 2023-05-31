@@ -39,11 +39,11 @@ export default {
     width: 100%;
   }
 
-  .my_container {
-    background-color: white;
-    width: 50%;
-    margin: auto;
-  }
+  // .my_container {
+  //   background-color: white;
+  //   width: 50%;
+  //   margin: auto;
+  // }
 
   .centered_container {
     max-width: 600px;
