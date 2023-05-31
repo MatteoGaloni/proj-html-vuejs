@@ -3,6 +3,8 @@ import Jumbotron from './Jumbotron.vue'
 import Services from './Services.vue'
 import TheCompany from './TheCompany.vue'
 import Project from './Project.vue'
+import ResultNumbers from './ResultNumbers.vue'
+import Sponsors from './Sponsors.vue'
 
 
 import { store } from "../data/store"
@@ -15,6 +17,8 @@ export default {
     Services,
     TheCompany,
     Project,
+    ResultNumbers,
+    Sponsors,
   },
 
   data() {
@@ -35,6 +39,8 @@ export default {
     <Services />
     <TheCompany />
     <Project />
+    <ResultNumbers />
+    <Sponsors />
 
   </main>
 </template>

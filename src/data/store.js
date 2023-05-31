@@ -85,9 +85,35 @@ export const store = reactive({
         {
             title: "Confraternization of the procurement team",
             backgroundImg: "./src/assets/images/img/project-6.jpg",
-            category: 6
+            category: "lorem ipsum dolor sit amet consectetur adipiscing elit"
         },       
     ],
+    resultsNumbers: [
+        {
+            result: "Certifications",
+            number: 128,
+        },
+        {
+            result: "Employees",
+            number: 230,
+        },
+        {
+            result: "Customers",
+            number: 128,
+        },
+        {
+            result: "Countries Served",
+            number: 128,
+        },
+    ],
+    sponsorsLogoPath: [
+        "./src/assets/images/img/logo-4.png",
+        "./src/assets/images/img/logo-5.png",
+        "./src/assets/images/img/logo-1.png",
+        "./src/assets/images/img/logo-2.png",
+        "./src/assets/images/img/logo-3.png",
+        "./src/assets/images/img/logo-4.png",
+    ]
 
 
 

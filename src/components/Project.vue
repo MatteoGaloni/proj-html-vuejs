@@ -12,6 +12,10 @@ export default {
   },
 
   methods: {
+    // filterProjects() {
+    //   console.log("ciao")
+
+    // }
   }
 }
 
@@ -24,18 +28,18 @@ export default {
     <div id="projects_fiter" class="d-flex justify-content-center">
       <ul>
         <li class="list-unstyled">
-          <a class="link" href="#">ALL</a>
-          <a class="link" href="#">INSTITUTIONAL</a>
-          <a class="link" href="#">SOCIAL</a>
-          <a class="link" href="#">EVENTS</a>
-          <a class="link" href="#">INNOVATION</a>
-          <a class="link" href="#">ENVIROMENT</a>
-          <a class="link" href="#">TECNOLOGY</a>
+          <span class="link" href="#">ALL</span>
+          <span class="link" href="#">INSTITUTIONAL</span>
+          <span class="link" href="#">SOCIAL</span>
+          <span class="link" href="#">EVENTS</span>
+          <span class="link" href="#">INNOVATION</span>
+          <span class="link" href="#">ENVIROMENT</span>
+          <span class="link" href="#">TECNOLOGY</span>
         </li>
       </ul>
     </div>
     <div class="project_card_container d-flex flex-wrap">
-      <div v-for="project in this.store.projects" class="project_card"
+      <div v-for="(project) in this.store.projects" class="project_card"
         :style="{ backgroundImage: 'url(' + project.backgroundImg + ')' }">
         <h3 class="text-white">{{ project.title }}</h3>
       </div>
