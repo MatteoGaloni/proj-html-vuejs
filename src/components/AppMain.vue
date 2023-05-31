@@ -1,52 +1,35 @@
 <script>
+import Jumbotron from './Jumbotron.vue'
 import Services from './Services.vue'
-
-
-
 
 export default {
   name: "AppMain",
 
   components: {
+    Jumbotron,
     Services,
-
-  },
-
-  props: {
-    servicesList: Array,
   },
 
   data() {
     return {
-
-
     }
   },
 
   methods: {
   }
 }
-
 </script>
 
 <template>
   <main>
-    <Services :servicesList="servicesList" />
-    <div class="test">
-      <h2>CIAOOOOOOOOOOOOOOOOOOOOOOOOoooooo</h2>
-      <div></div>
-
-    </div>
+    <Jumbotron />
+    <!-- sto valutando l'idea di usare lo stesso componente sia per la sezione "Services" che per la sezione "About the company" -->
+    <Services />
   </main>
 </template>
 
 <style scoped lang="scss">
 main {
-  background-color: pink;
-}
-
-.test {
-  background-color: black;
-  min-height: 200px;
+  background-color: lightgray;
 }
 </style>

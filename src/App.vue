@@ -4,6 +4,7 @@ import Jumbotron from './components/Jumbotron.vue'
 import AppMain from './components/AppMain.vue'
 import Cards from './components/Cards.vue'
 import AppFooter from './components/AppFooter.vue'
+import { store } from "./data/store"
 
 
 export default {
@@ -16,13 +17,14 @@ export default {
 
   data() {
     return {
+      store,
+
+      // oggetto passato tramite props all'header per popolare la sezione top Header
       contacts: {
         number: "+1 (305) 1234-5678",
         mail: "hello@example.com",
         address: "Main Avenue, 987",
       },
-
-      servicesList: ["Audit & assurance", "Financial Advisory", "Analytics and M&A", "Middle Marketing", "Legal Consulting", "Regulatory Risk"]
 
     }
   },
@@ -34,10 +36,19 @@ export default {
 </script>
 
 <template>
+  <!-- divido in tre macro componenti per poi aggiungerne altri più specifici  -->
+  <!-- ******************************************************************************** -->
+  <!-- in AppHeader inserisco da html top header e navigation bar,
+     inoltre passo tramite props l'array contacts preso dai data -->
   <AppHeader :contacts="contacts" />
-  <AppMain :servicesList="servicesList" />
+  <!-- ******************************************************************************** -->
+  <!-- in AppMain inserisco il componente Jumbotron - Services - Cards -->
+  <AppMain />
   <Cards />
-  <AppFooter />
+
+  <!-- ******************************************************************************** -->
+  <!-- in AppFooter insrisco da html bottom footer e i classici contatti del footer passandone alcuni tramite props (contacts) -->
+  <AppFooter :contacts="contacts" />
 </template>
 
 <style scoped lang="scss"></style>

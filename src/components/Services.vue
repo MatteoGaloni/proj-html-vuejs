@@ -1,14 +1,16 @@
 <script>
+import { store } from "../data/store"
+
 export default {
   name: "Services",
 
   props: {
-    servicesList: Array,
+
   },
 
   data() {
     return {
-
+      store
     }
   },
 
@@ -27,35 +29,10 @@ export default {
       <button class="btn btn-primary">SEE ALL</button>
     </div>
     <div id="services_cards_container" class="d-flex flex-wrap">
-      <div class="service_card">
-        <div>Immagine</div>
-        <h3>{{ this.servicesList[0] }}</h3>
-        <p>lorem ipsum upsius pudsad</p>
-      </div>
-      <div class="service_card">
-        <div>Immagine</div>
-        <h3>{{ this.servicesList[1] }}</h3>
-        <p>lorem ipsum upsius pudsad</p>
-      </div>
-      <div class="service_card">
-        <div>Immagine</div>
-        <h3>{{ this.servicesList[2] }}</h3>
-        <p>lorem ipsum upsius pudsad</p>
-      </div>
-      <div class="service_card">
-        <div>Immagine</div>
-        <h3>{{ this.servicesList[3] }}</h3>
-        <p>lorem ipsum upsius pudsad</p>
-      </div>
-      <div class="service_card">
-        <div>Immagine</div>
-        <h3>{{ this.servicesList[4] }}</h3>
-        <p>lorem ipsum upsius pudsad</p>
-      </div>
-      <div class="service_card">
-        <div>Immagine</div>
-        <h3>{{ this.servicesList[5] }}</h3>
-        <p>lorem ipsum upsius pudsad</p>
+      <div v-for="item in this.store.servicesList" class="service_card">
+        <img class="service_icon" :src="item.icon" alt="">
+        <h3>{{ item.service }}</h3>
+        <p>{{ item.overview }}</p>
       </div>
     </div>
   </div>
@@ -63,7 +40,6 @@ export default {
 
 <style scoped lang="scss">
 #services_container {
-  background-color: green;
   min-height: 500px;
 
   h1 {
@@ -74,10 +50,14 @@ export default {
     gap: 1rem;
 
     .service_card {
-      background-color: aliceblue;
+      background-color: white;
       width: calc(100% / 3 - 1rem);
-    }
 
+      .service_icon {
+        width: 60px;
+      }
+
+    }
   }
 }
 </style>

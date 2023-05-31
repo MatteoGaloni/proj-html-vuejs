@@ -1,13 +1,8 @@
 <script>
-import Jumbotron from './Jumbotron.vue'
-
-
-
 export default {
   name: "AppHeader",
 
   components: {
-    Jumbotron,
   },
 
   props: {
@@ -22,15 +17,13 @@ export default {
 
   methods: {
   }
-
-
 }
-
 </script>
 
 <template>
   <header>
-    <div id="nav_bar" class="container d-flex justify-content-between">
+    <!-- top notification bar -->
+    <div id="top_bar" class="container d-flex justify-content-between">
       <div class="left_nav">
         <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
       </div>
@@ -44,7 +37,25 @@ export default {
         </ul>
       </div>
     </div>
-    <Jumbotron />
+    <!-- ****************************************** -->
+    <!-- navigation bar -->
+    <div id="nav_bar" class="d-flex justify-content-between">
+      <div class="nav_left">
+        <img id="nextGen_logo" src="../assets/images/svg/svg-7.svg" alt="nav_logo">
+      </div>
+      <div class="nav_right">
+        <ul>
+          <li class="list-unstyled">
+            <a class="link" href="#">Home</a>
+            <a class="link" href="#">Sevices</a>
+            <a class="link" href="#">About</a>
+            <a class="link" href="#">Projects</a>
+            <a class="link" href="#">Results</a>
+            <a class="link" href="#"><button class="btn btn-secondary">Get in touch</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -52,8 +63,16 @@ export default {
 header {
   background-color: teal;
 
-  #nav_bar {
+  #top_bar {
     padding: 0.2rem 0;
+  }
+
+  #nav_bar {
+    background-color: white;
+
+    #nextGen_logo {
+      height: 100%;
+    }
   }
 }
 </style>
