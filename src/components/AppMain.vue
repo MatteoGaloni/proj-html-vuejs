@@ -5,6 +5,7 @@ import TheCompany from './TheCompany.vue'
 import Project from './Project.vue'
 import ResultNumbers from './ResultNumbers.vue'
 import Sponsors from './Sponsors.vue'
+import Form from './Form.vue'
 
 
 import { store } from "../data/store"
@@ -19,6 +20,11 @@ export default {
     Project,
     ResultNumbers,
     Sponsors,
+    Form,
+  },
+
+  props: {
+    contacts: Object,
   },
 
   data() {
@@ -41,6 +47,7 @@ export default {
     <Project />
     <ResultNumbers />
     <Sponsors />
+    <Form :contacts="contacts" />
 
   </main>
 </template>

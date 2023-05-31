@@ -1,7 +1,7 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-    // arrays di oggetti per popolare dinamicamente le cards Services e TheCompany
+    // arrays di oggetti per popolare dinamicamente i componenti
     servicesList: [
         {
             service: "Audit & Assurance",

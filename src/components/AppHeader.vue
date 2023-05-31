@@ -27,10 +27,14 @@ export default {
       <div class="left_nav">
         <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
       </div>
-      <div class="right_nav">
+      <div class="right_nav d-flex">
+        <ul v-for="contact in contacts" class="d-flex list-unstyled">
+          <li>
+            <i :class="contact.iconClass"></i>
+            <a class="link" href="">{{ contact.contact }}</a>
+          </li>
+        </ul>
         <ul class="d-flex list-unstyled">
-          <li><a class="link" href="">{{ this.contacts.number }}</a></li>
-          <li><a class="link" href="">{{ this.contacts.mail }}</a></li>
           <li><a class="link" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
           <li><a class="link" href=""><i class="fa-brands fa-twitter"></i></a></li>
           <li><a class="link" href=""><i class="fa-brands fa-instagram"></i></a></li>
@@ -68,7 +72,11 @@ header {
   }
 
   #nav_bar {
-    background-color: white;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    left: 16%;
+    top: 55px;
 
     #nextGen_logo {
       height: 100%;

@@ -34,6 +34,7 @@ export default {
   background-image: url(../assets/images/img/bg-parallax.png);
   background-position: center;
   background-color: white;
+  margin-top: -80px;
 
   .jumbo_img {
     width: 100%;
