@@ -1,7 +1,7 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-    // arrays di oggetti per popolare dinamicamente i componenti
+    // arrays per popolare dinamicamente i componenti
     servicesList: [
         {
             service: "Audit & Assurance",
@@ -55,6 +55,14 @@ export const store = reactive({
             iconClass: "fa-solid fa-graduation-cap",
             overview: "lorem ipsum dolor sit amet consectetur adipiscing elit"
         },       
+    ],
+    actions: [
+        "The Company",
+        "Institutional",
+        "Social & Events",
+        "Innovation",
+        "Enviroment",
+        "Technology",
     ],
     projects: [
         {
@@ -113,7 +121,16 @@ export const store = reactive({
         "./src/assets/images/img/logo-2.png",
         "./src/assets/images/img/logo-3.png",
         "./src/assets/images/img/logo-4.png",
-    ]
+    ],
+    supportLinks:[
+        "Responsability",
+        "Terms of Use",
+        "About Cookies",
+        "Privacy Policy",
+        "Accesibility",
+        "Information",
+    ],
+
 
 
 

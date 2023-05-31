@@ -55,7 +55,7 @@ export default {
             <a class="link" href="#">About</a>
             <a class="link" href="#">Projects</a>
             <a class="link" href="#">Results</a>
-            <a class="link" href="#"><button class="btn btn-secondary">Get in touch</button></a>
+            <a class="link" href="#"><button class="touch_btn btn btn-secondary">Get in touch</button></a>
           </li>
         </ul>
       </div>
@@ -65,10 +65,18 @@ export default {
 
 <style scoped lang="scss">
 header {
-  background-color: teal;
+  background-color: rgb(33, 51, 62);
 
   #top_bar {
     padding: 0.2rem 0;
+
+    .left_nav {
+      color: lightgray;
+    }
+
+    .right_nav {
+      color: lightgray;
+    }
   }
 
   #nav_bar {
@@ -77,6 +85,11 @@ header {
     width: 100%;
     left: 16%;
     top: 55px;
+
+    .touch_btn {
+      background-color: rgb(5, 130, 131);
+      padding: 0.5rem 1rem;
+    }
 
     #nextGen_logo {
       height: 100%;

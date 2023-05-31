@@ -20,7 +20,7 @@ export default {
       <h1>READY TEAM</h1>
       <p>No matter what your company needs, we will be ready to assist you in teh best possible way.</p>
       <div class="my_buttons">
-        <button class="btn btn-secondary">GET IN TOUCH</button>
+        <button class=" touch_btn btn btn-secondary">GET IN TOUCH</button>
         <button class="btn btn-secondary">READ MORE</button>
       </div>
     </div>
@@ -40,17 +40,16 @@ export default {
     width: 100%;
   }
 
-  // .my_container {
-  //   background-color: white;
-  //   width: 50%;
-  //   margin: auto;
-  // }
-
   .centered_container {
     max-width: 600px;
     margin: 8rem auto;
     padding: 4rem;
     text-align: center;
+
+    .touch_btn {
+      background-color: rgb(5, 130, 131);
+      padding: 0.5rem 1rem;
+    }
   }
 }
 
