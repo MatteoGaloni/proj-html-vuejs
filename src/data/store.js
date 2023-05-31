@@ -56,6 +56,38 @@ export const store = reactive({
             overview: "lorem ipsum dolor sit amet consectetur adipiscing elit"
         },       
     ],
+    projects: [
+        {
+            title: "Academic Professional in Social Media",
+            backgroundImg: "./src/assets/images/img/project-1.jpg",
+            category: 1
+        },
+        {
+            title: "President speech at the annual meeting",
+            backgroundImg: "./src/assets/images/img/project-2.jpg",
+            category: 2
+        },
+        {
+            title: "International business trip in Shanghai",
+            backgroundImg: "./src/assets/images/img/project-3.jpg",
+            category: 3
+        },
+        {
+            title: "Tecnology workshop with education theme",
+            backgroundImg: "./src/assets/images/img/project-4.jpg",
+            category: 4
+        },       
+        {
+            title: "Donation of clothes and food to the partner NGO",
+            backgroundImg: "./src/assets/images/img/project-5.jpg",
+            category: 5
+        },       
+        {
+            title: "Confraternization of the procurement team",
+            backgroundImg: "./src/assets/images/img/project-6.jpg",
+            category: 6
+        },       
+    ],
 
 
 
