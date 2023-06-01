@@ -23,8 +23,11 @@ export default {
 <template>
   <div id="full_container">
     <div id="services_container" class="my_container">
-      <h6 class="mb-3">OUR BUSINESS AREAS</h6>
-      <h1 class="mb-3">Excellence in Services</h1>
+      <h6 class="mb-3 my_small_title">OUR BUSINESS AREAS</h6>
+      <div class="title_box d-flex">
+        <span class="mb-3 me-2">Excellence in</span>
+        <span class="title_full">Services</span>
+      </div>
       <div class="d-flex justify-content-between mb-3">
         <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of
           experienced and renowned professionals. These are some options that you can hire.</p>
@@ -32,7 +35,10 @@ export default {
       </div>
       <div id="services_cards_container" class="d-flex justify-content-between flex-wrap">
         <div v-for="item in this.store.servicesList" class="service_card">
-          <img class="service_icon" :src="item.icon" alt="">
+          <div class="d-flex justify-content-between">
+            <img class="service_icon" :src="item.icon" alt="">
+            <i class="my_arrow fa-solid fa-arrow-right" style="color: #058283;"></i>
+          </div>
           <h3 class="">{{ item.service }}</h3>
           <p class="pr-3">{{ item.overview }}</p>
         </div>
@@ -50,8 +56,9 @@ export default {
 #services_container {
   min-height: 500px;
 
-  h1 {
-    color: rgb(89, 23, 147);
+
+  .my_button {
+    width: 9rem;
   }
 
   #services_cards_container {
@@ -66,6 +73,10 @@ export default {
       .service_icon {
         width: 50px;
         margin-bottom: 1rem;
+      }
+
+      .my_arrow {
+        font-size: 1.6rem;
       }
 
     }

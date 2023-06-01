@@ -24,8 +24,10 @@ export default {
 <template>
   <div class="general_container">
     <div id="project_container" class="my_container">
-      <h6>WE DO MORE FOR EVERYONE</h6>
-      <h1>Actions & Projects</h1>
+      <div class="title_box d-flex justify-content-center">
+        <span class="mb-3 me-2">Actions &</span>
+        <span class="title_full">Projects</span>
+      </div>
       <div id="projects_fiter" class="d-flex justify-content-center">
         <ul>
           <li class="list-unstyled">

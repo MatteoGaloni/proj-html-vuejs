@@ -107,11 +107,11 @@ export const store = reactive({
         },
         {
             result: "Customers",
-            number: 128,
+            number: 517,
         },
         {
             result: "Countries Served",
-            number: 128,
+            number: 94,
         },
     ],
     sponsorsLogoPath: [

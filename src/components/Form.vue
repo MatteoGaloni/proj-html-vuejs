@@ -30,8 +30,10 @@ export default {
     <div class="my_container">
       <div class="row">
         <div class="col-8">
-          <h6>SEND A MESSAGE</h6>
-          <h1>Get in Touch</h1>
+          <div class="title_box d-flex">
+            <span class="mb-3 me-2">Get in</span>
+            <span class="title_full">Touch</span>
+          </div>
           <p>We will respond to your message as soon as possible.</p>
           <div class="row">
             <div class="col mb-3">
@@ -69,7 +71,7 @@ export default {
               <a class="link" href="">{{ contact.contact }}</a>
             </li>
           </ul>
-          <button class="my_button">VIEW MAP</button>
+          <button class="my_button text_green">VIEW MAP</button>
         </div>
       </div>
     </div>
@@ -81,6 +83,10 @@ export default {
 <style scoped lang="scss">
 #form_container {
   background-color: white;
+
+  .text_green {
+    color: rgb(5, 130, 131);
+  }
 
 }
 </style>

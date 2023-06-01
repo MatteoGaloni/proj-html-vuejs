@@ -21,7 +21,7 @@ export default {
       <p>No matter what your company needs, we will be ready to assist you in teh best possible way.</p>
       <div class="my_buttons">
         <button class="my_button full_button">GET IN TOUCH</button>
-        <button class="my_button">READ MORE</button>
+        <button class="my_button text_green">READ MORE</button>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@ export default {
   background-image: url(../assets/images/img/bg-parallax.png);
   background-position: center;
   background-color: white;
-  margin-top: -153px;
+  margin-top: -176px;
 
   .jumbo_img {
     width: 100%;
@@ -55,9 +55,8 @@ export default {
       gap: 1rem;
       justify-content: center;
 
-      .touch_btn {
-        background-color: rgb(5, 130, 131);
-        padding: 0.5rem 1rem;
+      .text_green {
+        color: rgb(5, 130, 131);
       }
     }
 

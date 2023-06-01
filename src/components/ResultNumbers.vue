@@ -24,14 +24,15 @@ export default {
 <template>
   <div id="results_container">
     <div class="my_container">
-      <h6 class="mb-3">WHAT ARE WE DOING</h6>
-      <h1 class="mb-5">Results in Numbers</h1>
-      <div id="numbers_container" class="d-flex justify-content-center">
-        <div class="d-flex">
-          <div v-for="item in this.store.resultsNumbers">
-            <h5>{{ item.number }}</h5>
-            <h5 class="link" href="#">{{ item.result }}</h5>
-          </div>
+      <h6 class="mb-3 my_small_title">WHAT ARE WE DOING</h6>
+      <div class="title_box d-flex justify-content-center">
+        <span class="title_full">Results</span>
+        <span class="ml-3 ms-2">in Numbers</span>
+      </div>
+      <div id="numbers_container" class="mt-5 d-flex">
+        <div v-for="item in this.store.resultsNumbers">
+          <span class="my_small_title title_box">{{ item.number }}</span>
+          <h5 class="link" href="#">{{ item.result }}</h5>
         </div>
       </div>
     </div>
