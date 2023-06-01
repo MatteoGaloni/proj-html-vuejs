@@ -54,6 +54,6 @@ export default {
 
 <style scoped lang="scss">
 main {
-  background-color: lightgray;
+  background-color: black;
 }
 </style>

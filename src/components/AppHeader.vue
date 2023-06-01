@@ -49,13 +49,13 @@ export default {
       </div>
       <div class="nav_right">
         <ul>
-          <li class="list-unstyled">
+          <li class="list-unstyled" id="nav_link">
             <a class="link" href="#">Home</a>
             <a class="link" href="#">Sevices</a>
             <a class="link" href="#">About</a>
             <a class="link" href="#">Projects</a>
             <a class="link" href="#">Results</a>
-            <a class="link" href="#"><button class="touch_btn btn btn-secondary">Get in touch</button></a>
+            <a class="link" href="#"><button class="my_button full_button">Get in touch</button></a>
           </li>
         </ul>
       </div>
@@ -80,11 +80,16 @@ header {
   }
 
   #nav_bar {
-    padding: 0;
+    padding: 0rem 3rem;
     position: absolute;
     width: 100%;
     left: 16%;
     top: 55px;
+
+    #nav_link {
+      font-size: larger;
+      color: black;
+    }
 
     .touch_btn {
       background-color: rgb(5, 130, 131);
@@ -92,7 +97,7 @@ header {
     }
 
     #nextGen_logo {
-      height: 100%;
+      height: 80%;
     }
   }
 }

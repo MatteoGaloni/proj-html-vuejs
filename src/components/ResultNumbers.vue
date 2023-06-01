@@ -24,8 +24,8 @@ export default {
 <template>
   <div id="results_container">
     <div class="my_container">
-      <h6>WHAT ARE WE DOING</h6>
-      <h1>Results in Numbers</h1>
+      <h6 class="mb-3">WHAT ARE WE DOING</h6>
+      <h1 class="mb-5">Results in Numbers</h1>
       <div id="numbers_container" class="d-flex justify-content-center">
         <div class="d-flex">
           <div v-for="item in this.store.resultsNumbers">

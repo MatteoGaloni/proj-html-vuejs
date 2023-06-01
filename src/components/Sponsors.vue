@@ -36,7 +36,6 @@ export default {
 <style scoped lang="scss">
 #sponsors_container {
   background-color: #222;
-  padding-bottom: 5rem
 }
 
 .logo_img {

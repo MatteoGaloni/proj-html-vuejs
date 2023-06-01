@@ -130,8 +130,4 @@ export const store = reactive({
         "Accesibility",
         "Information",
     ],
-
-
-
-
 })

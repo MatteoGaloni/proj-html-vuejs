@@ -17,11 +17,11 @@ export default {
 <template>
   <div id="jumbotron_container">
     <div class="centered_container">
-      <h1>READY TEAM</h1>
+      <h1>Ready Team</h1>
       <p>No matter what your company needs, we will be ready to assist you in teh best possible way.</p>
       <div class="my_buttons">
-        <button class=" touch_btn btn btn-secondary">GET IN TOUCH</button>
-        <button class="btn btn-secondary">READ MORE</button>
+        <button class="my_button full_button">GET IN TOUCH</button>
+        <button class="my_button">READ MORE</button>
       </div>
     </div>
   </div>
@@ -41,15 +41,26 @@ export default {
   }
 
   .centered_container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 8rem auto;
     padding: 4rem;
     text-align: center;
 
-    .touch_btn {
-      background-color: rgb(5, 130, 131);
-      padding: 0.5rem 1rem;
+    h1 {
+      font-weight: 800;
     }
+
+    .my_buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+      .touch_btn {
+        background-color: rgb(5, 130, 131);
+        padding: 0.5rem 1rem;
+      }
+    }
+
   }
 }
 

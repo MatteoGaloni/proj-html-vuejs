@@ -57,7 +57,7 @@ export default {
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
           </div>
-          <button class="btn btn-warning">Send</button>
+          <button class="my_button full_button">Send</button>
         </div>
         <div class="col-4">
           <h4>Example Inc.</h4>
@@ -69,7 +69,7 @@ export default {
               <a class="link" href="">{{ contact.contact }}</a>
             </li>
           </ul>
-          <button class="btn btn-primary">VIEW MAP</button>
+          <button class="my_button">VIEW MAP</button>
         </div>
       </div>
     </div>

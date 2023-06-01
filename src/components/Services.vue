@@ -21,24 +21,32 @@ export default {
 </script>
 
 <template>
-  <div id="services_container" class="my_container">
-    <h1>Excellence in Services</h1>
-    <div class="d-flex">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid aperiam obcaecati ipsam a culpa amet, odio
-        tenetur facilis nostrum ea tempore doloribus pariatur explicabo, iure dolores repellendus? Eligendi, impedit.</p>
-      <button class="btn btn-primary">SEE ALL</button>
-    </div>
-    <div id="services_cards_container" class="d-flex flex-wrap">
-      <div v-for="item in this.store.servicesList" class="service_card">
-        <img class="service_icon" :src="item.icon" alt="">
-        <h3>{{ item.service }}</h3>
-        <p>{{ item.overview }}</p>
+  <div id="full_container">
+    <div id="services_container" class="my_container">
+      <h6 class="mb-3">OUR BUSINESS AREAS</h6>
+      <h1 class="mb-3">Excellence in Services</h1>
+      <div class="d-flex justify-content-between mb-3">
+        <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of
+          experienced and renowned professionals. These are some options that you can hire.</p>
+        <button class="my_button full_button">SEE ALL</button>
+      </div>
+      <div id="services_cards_container" class="d-flex justify-content-between flex-wrap">
+        <div v-for="item in this.store.servicesList" class="service_card">
+          <img class="service_icon" :src="item.icon" alt="">
+          <h3 class="">{{ item.service }}</h3>
+          <p class="pr-3">{{ item.overview }}</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+#full_container {
+  background-color: rgb(238, 244, 237);
+}
+
+
 #services_container {
   min-height: 500px;
 
@@ -50,11 +58,14 @@ export default {
     gap: 1rem;
 
     .service_card {
+      border-radius: 6px;
+      padding: 3rem 2rem;
       background-color: white;
       width: calc(100% / 3 - 1rem);
 
       .service_icon {
-        width: 60px;
+        width: 50px;
+        margin-bottom: 1rem;
       }
 
     }
