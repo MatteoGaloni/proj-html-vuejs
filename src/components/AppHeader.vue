@@ -43,21 +43,23 @@ export default {
     </div>
     <!-- ****************************************** -->
     <!-- navigation bar -->
-    <div id="nav_bar" class="my_container d-flex justify-content-between">
-      <div class="nav_left">
-        <img id="nextGen_logo" src="../assets/images/svg/svg-7.svg" alt="nav_logo">
-      </div>
-      <div class="nav_right">
-        <ul>
-          <li class="list-unstyled" id="nav_link">
-            <a class="link" href="#">Home</a>
-            <a class="link" href="#">Sevices</a>
-            <a class="link" href="#">About</a>
-            <a class="link" href="#">Projects</a>
-            <a class="link" href="#">Results</a>
-            <a class="link" href="#"><button class="my_button full_button">Get in touch</button></a>
-          </li>
-        </ul>
+    <div class="general_container">
+      <div id="nav_bar" class="my_container d-flex justify-content-between">
+        <div class="nav_left">
+          <img id="nextGen_logo" src="../assets/images/svg/svg-7.svg" alt="nav_logo">
+        </div>
+        <div class="nav_right">
+          <ul>
+            <li class="list-unstyled" id="nav_link">
+              <a class="link" href="#">Home</a>
+              <a class="link" href="#">Sevices</a>
+              <a class="link" href="#">About</a>
+              <a class="link" href="#">Projects</a>
+              <a class="link" href="#">Results</a>
+              <a class="link" href="#"><button class="my_button full_button">Get in touch</button></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -79,12 +81,13 @@ header {
     }
   }
 
+  .general_container {
+    background: white;
+  }
+
   #nav_bar {
-    padding: 0rem 3rem;
-    position: absolute;
+    padding: 0;
     width: 100%;
-    left: 16%;
-    top: 55px;
 
     #nav_link {
       font-size: larger;
@@ -97,7 +100,7 @@ header {
     }
 
     #nextGen_logo {
-      height: 80%;
+      height: 50px;
     }
   }
 }

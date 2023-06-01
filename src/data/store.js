@@ -38,22 +38,22 @@ export const store = reactive({
         {
             value: "Tradition",
             iconClass: "fa-solid fa-medal",
-            overview: "lorem ipsum dolor sit amet consectetur adipiscing elit"
+            overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit"
         },
         {
             value: "Security",
             iconClass: "fa-regular fa-lock",
-            overview: "lorem ipsum dolor sit amet consectetur adipiscing elit"
+            overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit"
         },
         {
             value: "Certificate",
             iconClass: "fa-solid fa-pen-to-square",
-            overview: "lorem ipsum dolor sit amet consectetur adipiscing elit"
+            overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit"
         },
         {
             value: "Expertise",
             iconClass: "fa-solid fa-graduation-cap",
-            overview: "lorem ipsum dolor sit amet consectetur adipiscing elit"
+            overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit"
         },       
     ],
     actions: [

@@ -40,8 +40,8 @@ export default {
             </div>
           </div>
           <div class="d-flex">
-            <button class="btn btn-secondary">GET IN TOUCH</button>
-            <button class="btn btn-secondary">READ MORE</button>
+            <button class="my_button full_button me-4">GET IN TOUCH</button>
+            <button class="my_button">READ MORE</button>
           </div>
         </div>
       </div>

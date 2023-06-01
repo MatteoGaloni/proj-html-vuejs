@@ -35,7 +35,7 @@ export default {
                 <a class="link" href="">{{ contact.contact }}</a>
               </li>
             </ul>
-            <button class="my_button">Get in Touch</button>
+            <button class="my_button">GET IN TOUCH</button>
           </div>
         </div>
         <div class="col-3">
@@ -94,7 +94,7 @@ footer {
 }
 
 .general_container {
-  background-color: black;
+  background-color: rgb(13, 13, 17);
 }
 
 #bottom_bar {

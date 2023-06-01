@@ -57,7 +57,7 @@ export default {
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
           </div>
-          <button class="my_button full_button">Send</button>
+          <button class="my_button full_button">SEND</button>
         </div>
         <div class="col-4">
           <h4>Example Inc.</h4>

@@ -54,6 +54,6 @@ export default {
 
 <style scoped lang="scss">
 main {
-  background-color: black;
+  background-color: rgb(17, 17, 23);
 }
 </style>
