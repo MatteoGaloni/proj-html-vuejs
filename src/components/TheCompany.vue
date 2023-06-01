@@ -44,7 +44,7 @@ export default {
           </div>
           <div class="d-flex">
             <button class="my_button full_button me-4">GET IN TOUCH</button>
-            <button class="my_button">READ MORE</button>
+            <button class="my_button full_on_hover">READ MORE</button>
           </div>
         </div>
       </div>

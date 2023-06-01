@@ -47,7 +47,7 @@ export default {
     <ResultNumbers />
     <Sponsors />
     <!-- passo tramite props gli stessi contacts dell'header -->
-    <Form :contheaderacts="contacts" />
+    <Form :contacts="contacts" />
   </main>
 </template>
 

@@ -22,7 +22,7 @@ export default {
       <p>No matter what your company needs, we will be ready to assist you in teh best possible way.</p>
       <div class="my_buttons">
         <button class="my_button full_button">GET IN TOUCH</button>
-        <button class="my_button text_green">READ MORE</button>
+        <button class="my_button text_green full_on_hover">READ MORE</button>
       </div>
     </div>
   </div>
@@ -51,16 +51,17 @@ export default {
     .title_box {
       font-size: 5rem;
       font-weight: 900;
+
+      .title_full {
+        width: 15.5rem;
+        height: 7rem
+      }
     }
 
     .my_buttons {
       display: flex;
       gap: 1rem;
       justify-content: center;
-
-      .text_green {
-        color: rgb(5, 130, 131);
-      }
     }
 
   }

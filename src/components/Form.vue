@@ -70,7 +70,7 @@ export default {
               <a class="link" href="">{{ contact.contact }}</a>
             </li>
           </ul>
-          <button class="my_button text_green">VIEW MAP</button>
+          <button class="my_button text_green full_on_hover">VIEW MAP</button>
         </div>
       </div>
     </div>
@@ -80,9 +80,5 @@ export default {
 <style scoped lang="scss">
 #form_container {
   background-color: white;
-
-  .text_green {
-    color: rgb(5, 130, 131);
-  }
 }
 </style>

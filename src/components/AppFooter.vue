@@ -34,7 +34,7 @@ export default {
                 <a class="link" href="">{{ contact.contact }}</a>
               </li>
             </ul>
-            <button class="my_button">GET IN TOUCH</button>
+            <button class="my_button full_on_hover">GET IN TOUCH</button>
           </div>
         </div>
         <div class="col-3">

@@ -43,7 +43,13 @@ export default {
       <div class="project_card_container d-flex flex-wrap">
         <div v-for="(project) in this.store.projects" class="project_card"
           :style="{ backgroundImage: 'url(' + project.backgroundImg + ')' }">
-          <h3 class="text-white">{{ project.title }}</h3>
+          <div>
+            <i class="arrow_container fa-solid fa-arrow-right"></i>
+          </div>
+          <div>
+            <h3 class="text-white">{{ project.title }}</h3>
+            <p class="show_on_hover">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -67,8 +73,30 @@ export default {
       width: calc(100%/3 - 1rem);
       background-size: cover;
       display: flex;
-      align-items: flex-end;
+      flex-direction: column;
+      justify-content: space-between;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      color: white;
+      padding: 2rem;
+
+      .arrow_container {
+        font-size: 1.6rem;
+        text-align: end;
+        display: none;
+
+      }
+    }
+
+    .show_on_hover {
+      display: none;
+    }
+
+    .project_card:hover .show_on_hover {
+      display: block;
+    }
+
+    .project_card:hover .arrow_container {
+      display: block;
     }
 
     .project_card:hover {
