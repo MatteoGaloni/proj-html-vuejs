@@ -72,6 +72,11 @@ export default {
   #theCompany_cards_container {
     gap: 1rem;
 
+    i {
+      color: rgb(5, 130, 131);
+      font-size: 1.6rem;
+    }
+
     .theCompany_card {
       width: calc(100% / 2 - 1rem);
 

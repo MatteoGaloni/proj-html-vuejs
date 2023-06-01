@@ -30,8 +30,8 @@ export default {
       <div class="row">
         <div class="col-8">
           <div class="title_box d-flex">
-            <span class="mb-3 me-2">Get in</span>
-            <span class="title_full">Touch</span>
+            <span class="full_title mb-3 me-2">Get in</span>
+            <!-- inserito after element -->
           </div>
           <p>We will respond to your message as soon as possible.</p>
           <div class="row">
@@ -80,5 +80,13 @@ export default {
 <style scoped lang="scss">
 #form_container {
   background-color: white;
+}
+
+.full_title::after {
+  content: "Touch";
+  background-color: rgba(5, 131, 131, 0.199);
+  color: rgb(5, 130, 131);
+  padding: 0 1rem;
+  margin-left: 1rem;
 }
 </style>

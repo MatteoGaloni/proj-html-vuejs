@@ -16,8 +16,8 @@ export default {
   <div id="jumbotron_container">
     <div class="centered_container">
       <div class="title_box d-flex">
-        <span class="mb-3 me-2">Ready</span>
-        <span class="title_full">Team</span>
+        <span class="full_title mb-3 me-2">Ready</span>
+        <!-- inserito after element -->
       </div>
       <p>No matter what your company needs, we will be ready to assist you in teh best possible way.</p>
       <div class="my_buttons">
@@ -69,5 +69,13 @@ export default {
 
 #nextGen_logo {
   width: 100px;
+}
+
+.full_title::after {
+  content: "Team";
+  background-color: rgba(5, 131, 131, 0.199);
+  color: rgb(5, 130, 131);
+  padding: 0 1rem;
+  margin-left: 1rem;
 }
 </style>

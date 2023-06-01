@@ -24,8 +24,8 @@ export default {
     <div id="services_container" class="my_container">
       <h6 class="mb-3 my_small_title">OUR BUSINESS AREAS</h6>
       <div class="title_box d-flex">
-        <span class="mb-3 me-2">Excellence in</span>
-        <span class="title_full">Services</span>
+        <span class="full_title mb-3 me-2">Excellence in</span>
+        <!-- inserito after element -->
       </div>
       <div class="d-flex justify-content-between mb-3">
         <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of
@@ -77,5 +77,13 @@ export default {
       }
     }
   }
+}
+
+.full_title::after {
+  content: "Services";
+  background-color: rgba(5, 131, 131, 0.199);
+  color: rgb(5, 130, 131);
+  padding: 0 2rem;
+  margin-left: 1rem;
 }
 </style>

@@ -24,8 +24,8 @@ export default {
   <div class="general_container">
     <div id="project_container" class="my_container">
       <div class="title_box d-flex justify-content-center">
-        <span class="mb-3 me-2">Actions &</span>
-        <span class="title_full">Projects</span>
+        <span class="full_title mb-3 me-2">Actions &</span>
+        <!-- inserito after element -->
       </div>
       <div id="projects_fiter" class="d-flex justify-content-center">
         <ul>
@@ -104,5 +104,13 @@ export default {
       cursor: pointer;
     }
   }
+}
+
+.full_title::after {
+  content: "Projects";
+  background-color: rgba(5, 131, 131, 0.199);
+  color: rgb(5, 130, 131);
+  padding: 0 1rem;
+  margin-left: 1rem;
 }
 </style>

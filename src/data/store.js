@@ -42,7 +42,7 @@ export const store = reactive({
         },
         {
             value: "Security",
-            iconClass: "fa-regular fa-lock",
+            iconClass: "fa-solid fa-lock",
             overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit"
         },
         {
