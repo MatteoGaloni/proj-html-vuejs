@@ -83,24 +83,24 @@ header {
 
   .general_container {
     background: white;
-  }
 
-  #nav_bar {
-    padding: 1.5rem 0;
-    width: 100%;
+    #nav_bar {
+      padding: 1.5rem 0;
+      width: 100%;
 
-    #nav_link {
-      font-size: larger;
-      color: black;
-    }
+      #nav_link {
+        font-size: larger;
+        color: black;
+      }
 
-    .touch_btn {
-      background-color: rgb(5, 130, 131);
-      padding: 0.5rem 1rem;
-    }
+      .touch_btn {
+        background-color: rgb(5, 130, 131);
+        padding: 0.5rem 1rem;
+      }
 
-    #nextGen_logo {
-      height: 50px;
+      #nextGen_logo {
+        height: 50px;
+      }
     }
   }
 }

@@ -18,7 +18,6 @@ export default {
   methods: {
   }
 }
-
 </script>
 
 <template>
@@ -83,7 +82,6 @@ export default {
         </div>
       </div>
     </div>
-
   </footer>
 </template>
 

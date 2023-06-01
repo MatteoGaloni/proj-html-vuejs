@@ -41,14 +41,13 @@ export default {
 <template>
   <main>
     <Jumbotron />
-    <!-- sto valutando l'idea di usare lo stesso componente sia per la sezione "Services" che per la sezione "About the company" -->
     <Services />
     <TheCompany />
     <Project />
     <ResultNumbers />
     <Sponsors />
-    <Form :contacts="contacts" />
-
+    <!-- passo tramite props gli stessi contacts dell'header -->
+    <Form :contheaderacts="contacts" />
   </main>
 </template>
 

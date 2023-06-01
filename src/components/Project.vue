@@ -18,7 +18,6 @@ export default {
     // }
   }
 }
-
 </script>
 
 <template>
@@ -77,6 +76,5 @@ export default {
       cursor: pointer;
     }
   }
-
 }
 </style>

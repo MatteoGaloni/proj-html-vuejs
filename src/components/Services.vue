@@ -17,7 +17,6 @@ export default {
   methods: {
   }
 }
-
 </script>
 
 <template>
@@ -52,10 +51,8 @@ export default {
   background-color: rgb(238, 244, 237);
 }
 
-
 #services_container {
   min-height: 500px;
-
 
   .my_button {
     width: 9rem;
@@ -78,9 +75,7 @@ export default {
       .my_arrow {
         font-size: 1.6rem;
       }
-
     }
-
   }
 }
 </style>

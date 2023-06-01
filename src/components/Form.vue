@@ -22,7 +22,6 @@ export default {
     // }
   }
 }
-
 </script>
 
 <template>
@@ -75,8 +74,6 @@ export default {
         </div>
       </div>
     </div>
-
-
   </div>
 </template>
 
@@ -87,6 +84,5 @@ export default {
   .text_green {
     color: rgb(5, 130, 131);
   }
-
 }
 </style>

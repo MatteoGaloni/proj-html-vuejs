@@ -17,7 +17,6 @@ export default {
   methods: {
   }
 }
-
 </script>
 
 <template>
@@ -25,14 +24,18 @@ export default {
     <div id="theCompany_info_container" class="my_container">
       <div class="row">
         <div class="col-6">
-          <h1>The Company</h1>
+          <h6 class="mb-3 my_small_title">ABOUT THE NETWORK</h6>
+          <div class="title_box d-flex mb-3">
+            <span class="title_full">The</span>
+            <span class="ml-3 ms-2">Company</span>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid aperiam obcaecati ipsam a culpa amet,
             odio
             tenetur facilis nostrum ea tempore doloribus pariatur explicabo, iure dolores repellendus? Eligendi, impedit.
           </p>
-          <div id="theCompany_cards_container" class="d-flex flex-wrap">
+          <div id="theCompany_cards_container" class="d-flex flex-wrap mb-3">
             <div v-for="item in this.store.companyValues" class="theCompany_card">
-              <div class="d-flex">
+              <div class="d-flex align-items-center mb-3">
                 <i class="theCompany_icon" :class="item.iconClass"></i>
                 <h3>{{ item.value }}</h3>
               </div>
@@ -60,6 +63,11 @@ export default {
 #theCompany_info_container {
   min-height: 500px;
   color: white;
+
+  .title_full {
+    width: 7.4rem;
+    color: white;
+  }
 
   #theCompany_cards_container {
     gap: 1rem;

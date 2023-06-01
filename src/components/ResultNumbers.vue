@@ -18,7 +18,6 @@ export default {
     // }
   }
 }
-
 </script>
 
 <template>
@@ -29,7 +28,7 @@ export default {
         <span class="title_full">Results</span>
         <span class="ml-3 ms-2">in Numbers</span>
       </div>
-      <div id="numbers_container" class="mt-5 d-flex">
+      <div id="numbers_container" class="mt-5 d-flex justify-content-around">
         <div v-for="item in this.store.resultsNumbers">
           <span class="my_small_title title_box">{{ item.number }}</span>
           <h5 class="link" href="#">{{ item.result }}</h5>
@@ -47,6 +46,5 @@ export default {
   background-position: center;
   min-height: 400px;
   color: white;
-
 }
 </style>
