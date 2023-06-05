@@ -27,15 +27,15 @@ export default {
       <div v-for="logo in this.store.sponsorsLogoPath">
         <img class="logo_img" :src="logo" alt="#">
       </div>
-
     </div>
-
   </div>
 </template>
 
 <style scoped lang="scss">
+@use '../styles/my_variables.scss' as *;
+
 #sponsors_container {
-  background-color: #222;
+  background-color: $dark_bg;
 }
 
 .logo_img {

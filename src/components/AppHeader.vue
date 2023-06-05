@@ -6,7 +6,7 @@ export default {
   },
 
   props: {
-    contacts: Object,
+    contacts: Array,
   },
 
   data() {
@@ -16,7 +16,7 @@ export default {
   },
 
   methods: {
-  }
+  },
 }
 </script>
 
@@ -28,8 +28,8 @@ export default {
         <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
       </div>
       <div class="right_nav d-flex">
-        <ul v-for="contact in contacts" class="d-flex list-unstyled">
-          <li>
+        <ul class="d-flex list-unstyled">
+          <li v-for="contact in contacts">
             <i :class="contact.iconClass"></i>
             <a class="link" href="">{{ contact.contact }}</a>
           </li>
@@ -49,15 +49,13 @@ export default {
           <img id="nextGen_logo" src="../assets/images/svg/svg-7.svg" alt="nav_logo">
         </div>
         <div class="nav_right">
-          <ul>
-            <li class="list-unstyled" id="nav_link">
-              <a class="link" href="#">Home</a>
-              <a class="link" href="#">Sevices</a>
-              <a class="link" href="#">About</a>
-              <a class="link" href="#">Projects</a>
-              <a class="link" href="#">Results</a>
-              <a class="link" href="#"><button class="my_button full_button">Get in touch</button></a>
-            </li>
+          <ul class="list-unstyled d-flex align-items-center" id="nav_link">
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#">Sevices</a></li>
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#">Projects</a></li>
+            <li><a class="link" href="#">Results</a></li>
+            <li><a class="link" href="#"><button class="my_button full_button">Get in touch</button></a></li>
           </ul>
         </div>
       </div>
@@ -66,41 +64,36 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/my_variables.scss' as *;
+
 header {
   background-color: rgb(33, 51, 62);
 
   #top_bar {
     padding: 0.2rem 0;
-
-    .left_nav {
-      color: lightgray;
-    }
-
-    .right_nav {
-      color: lightgray;
-    }
+    color: $link_color;
   }
 
   .general_container {
     background: white;
 
+
     #nav_bar {
       padding: 1.5rem 0;
       width: 100%;
 
-      #nav_link {
-        font-size: larger;
-        color: black;
-      }
-
-      .touch_btn {
-        background-color: rgb(5, 130, 131);
-        padding: 0.5rem 1rem;
-      }
-
       #nextGen_logo {
         height: 50px;
       }
+
+      #nav_link {
+        font-size: larger;
+
+        a {
+          color: black;
+        }
+      }
+
     }
   }
 }

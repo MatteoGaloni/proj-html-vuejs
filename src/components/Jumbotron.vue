@@ -19,7 +19,7 @@ export default {
         <span class="full_title mb-3 me-2">Ready</span>
         <!-- inserito after element -->
       </div>
-      <p>No matter what your company needs, we will be ready to assist you in teh best possible way.</p>
+      <p>No matter what your company needs, we will be ready to assist you in the best possible way.</p>
       <div class="my_buttons">
         <button class="my_button full_button">GET IN TOUCH</button>
         <button class="my_button text_green full_on_hover">READ MORE</button>
@@ -29,6 +29,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/my_variables.scss' as *;
+
 #jumbotron_container {
   width: 100%;
   min-height: 700px;
@@ -36,10 +38,6 @@ export default {
   background-position: center;
   background-color: white;
   margin-top: -176px;
-
-  .jumbo_img {
-    width: 100%;
-  }
 
   .centered_container {
     max-width: 600px;
@@ -52,9 +50,8 @@ export default {
       font-size: 5rem;
       font-weight: 900;
 
-      .title_full {
-        width: 15.5rem;
-        height: 7rem
+      .full_title::after {
+        content: "Team";
       }
     }
 
@@ -65,17 +62,5 @@ export default {
     }
 
   }
-}
-
-#nextGen_logo {
-  width: 100px;
-}
-
-.full_title::after {
-  content: "Team";
-  background-color: rgba(5, 131, 131, 0.199);
-  color: rgb(5, 130, 131);
-  padding: 0 1rem;
-  margin-left: 1rem;
 }
 </style>

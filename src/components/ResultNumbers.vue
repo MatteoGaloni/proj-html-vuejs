@@ -25,8 +25,8 @@ export default {
     <div class="my_container">
       <h6 class="mb-3 my_small_title">WHAT ARE WE DOING</h6>
       <div class="title_box d-flex justify-content-center">
-        <span class="title_full">Results</span>
-        <span class="ml-3 ms-2">in Numbers</span>
+        <!-- inserito before element -->
+        <span class="full_title ml-3 ms-2">in Numbers</span>
       </div>
       <div id="numbers_container" class="mt-5 d-flex justify-content-around">
         <div v-for="item in this.store.resultsNumbers">
@@ -44,7 +44,11 @@ export default {
   background-image: url(../assets/images/img/bg-7.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 400px;
   color: white;
+}
+
+.full_title::before {
+  content: "Results";
+  background-color: rgba(5, 131, 131, 0.199);
 }
 </style>

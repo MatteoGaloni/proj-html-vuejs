@@ -73,6 +73,7 @@ export default {
       </div>
     </div>
     <div class="general_container">
+      <!-- <i class="fa-solid fa-arrow-up"></i> -->
       <div id="bottom_bar" class="my_container d-flex justify-content-between">
         <div class="left_nav">
           <span>Enjoy the low price. We are tracking any intention of piracy.</span>
@@ -86,8 +87,10 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/my_variables.scss' as *;
+
 footer {
-  background-color: rgb(17, 17, 23);
+  background-color: $dark_bg;
   color: white;
 }
 
@@ -101,8 +104,9 @@ footer {
 }
 
 .list_container {
-  background-color: rgb(25, 25, 31);
+  background-color: rgb(25, 25, 30);
   padding: 1rem;
+  border-radius: 7px;
 }
 
 #nextGen_logo {

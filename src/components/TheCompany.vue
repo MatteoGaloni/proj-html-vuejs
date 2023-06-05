@@ -26,8 +26,8 @@ export default {
         <div class="col-6">
           <h6 class="mb-3 my_small_title">ABOUT THE NETWORK</h6>
           <div class="title_box d-flex mb-3">
-            <span class="title_full">The</span>
-            <span class="ml-3 ms-2">Company</span>
+            <!-- inserito before element -->
+            <span class="full_title ml-3 ms-2">Company</span>
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid aperiam obcaecati ipsam a culpa amet,
             odio
@@ -53,6 +53,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/my_variables.scss' as *;
+
 #theCompany_general_container {
   background-image: url(../assets/images/img/about-4.jpg);
   background-position: right;
@@ -61,19 +63,14 @@ export default {
 }
 
 #theCompany_info_container {
-  min-height: 500px;
   color: white;
 
-  .title_full {
-    width: 7.4rem;
-    color: white;
-  }
 
   #theCompany_cards_container {
     gap: 1rem;
 
     i {
-      color: rgb(5, 130, 131);
+      color: $main_color;
       font-size: 1.6rem;
     }
 
@@ -94,5 +91,10 @@ export default {
   img {
     width: 100%;
   }
+}
+
+.full_title::before {
+  content: "The";
+  background-color: rgba(5, 131, 131, 0.199);
 }
 </style>

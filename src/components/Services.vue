@@ -36,7 +36,7 @@ export default {
         <div v-for="item in this.store.servicesList" class="service_card">
           <div class="d-flex justify-content-between">
             <img class="service_icon" :src="item.icon" alt="">
-            <i class="my_arrow fa-solid fa-arrow-right" style="color: #058283;"></i>
+            <i class="my_arrow fa-solid fa-arrow-right"></i>
           </div>
           <h3 class="">{{ item.service }}</h3>
           <p class="pr-3">{{ item.overview }}</p>
@@ -47,15 +47,16 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/my_variables.scss' as *;
+
 #full_container {
-  background-color: rgb(238, 244, 237);
+  background-color: $services_bg;
 }
 
 #services_container {
-  min-height: 500px;
-
   .my_button {
     width: 9rem;
+    height: 3rem;
   }
 
   #services_cards_container {
@@ -74,6 +75,7 @@ export default {
 
       .my_arrow {
         font-size: 1.6rem;
+        color: $text_color;
       }
     }
   }
@@ -81,9 +83,5 @@ export default {
 
 .full_title::after {
   content: "Services";
-  background-color: rgba(5, 131, 131, 0.199);
-  color: rgb(5, 130, 131);
-  padding: 0 2rem;
-  margin-left: 1rem;
 }
 </style>

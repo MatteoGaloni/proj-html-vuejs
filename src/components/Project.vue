@@ -6,18 +6,43 @@ export default {
 
   data() {
     return {
-      store
+      store,
+      projectArray: [],
+
 
     }
   },
 
   methods: {
-    // filterProjects() {
-    //   console.log("ciao")
+    filterProjects(query) {
+      console.log(query)
+      let result = this.store.projects.filter((el, i) => {
+        el.category.forEach(element => {
+          element
 
-    // }
+
+        });
+        if (query == el.category) {
+          return el
+        } else if (query == 1) {
+          return el
+        }
+      })
+      this.projectArray = result
+      console.log("il risultato è", this.projectArray)
+
+    },
+
+    initProjects() {
+      this.projectArray = [...this.store.projects]
+    }
+  },
+  mounted() {
+    this.initProjects()
   }
 }
+
+
 </script>
 
 <template>
@@ -27,21 +52,17 @@ export default {
         <span class="full_title mb-3 me-2">Actions &</span>
         <!-- inserito after element -->
       </div>
-      <div id="projects_fiter" class="d-flex justify-content-center">
-        <ul>
-          <li class="list-unstyled">
-            <span class="link" href="#">ALL</span>
-            <span class="link" href="#">INSTITUTIONAL</span>
-            <span class="link" href="#">SOCIAL</span>
-            <span class="link" href="#">EVENTS</span>
-            <span class="link" href="#">INNOVATION</span>
-            <span class="link" href="#">ENVIROMENT</span>
-            <span class="link" href="#">TECNOLOGY</span>
+      <div id="projects_fiter">
+        <ul class="d-flex justify-content-around list-unstyled">
+          <li v-for="item in this.store.actionsCategories">
+            <div class="projects_title full_on_hover_light">
+              <span @click="filterProjects(item.category)">{{ item.action }}</span>
+            </div>
           </li>
         </ul>
       </div>
       <div class="project_card_container d-flex flex-wrap">
-        <div v-for="(project) in this.store.projects" class="project_card"
+        <div v-for="(project) in this.projectArray" class="project_card"
           :style="{ backgroundImage: 'url(' + project.backgroundImg + ')' }">
           <div>
             <i class="arrow_container fa-solid fa-arrow-right"></i>
@@ -75,9 +96,9 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       color: white;
       padding: 2rem;
+
 
       .arrow_container {
         font-size: 1.6rem;
@@ -108,9 +129,5 @@ export default {
 
 .full_title::after {
   content: "Projects";
-  background-color: rgba(5, 131, 131, 0.199);
-  color: rgb(5, 130, 131);
-  padding: 0 1rem;
-  margin-left: 1rem;
 }
 </style>

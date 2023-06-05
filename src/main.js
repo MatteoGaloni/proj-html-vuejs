@@ -1,6 +1,6 @@
-import { createApp } from 'vue'
+import { createApp } from "vue";
 // importo file generale per scss
-import './style.scss'
-import App from './App.vue'
+import "./styles/main.scss";
+import App from "./App.vue";
 
-createApp(App).mount('#app')
+createApp(App).mount("#app");

@@ -1,0 +1,96 @@
+@use '../styles/my_variables.scss' as *;
+/******** BASE **********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+// *********Centered Container*******************
+
+.my_container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+// *********************************
+// *******************Title Settings*****************
+
+.my_small_title {
+    color: $text_color
+}
+
+.title_box {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.full_title::after{
+    background-color: $title_bg;
+    color: $main_color;
+    padding: 0 1rem;
+    margin-left: 1rem;
+}
+.full_title::before{
+    background-color: $title_bg;
+    color: $main_color;;
+    padding: 0 1rem;
+    margin-right: 1rem;
+}
+
+// .title_full {
+//     background-color: rgba(5, 131, 131, 0.178);
+//     width: 13.5rem;
+//     height: 5rem;
+//     padding-left: 0.7rem;
+//     color: red
+// }
+
+// *******************Buttons Settings*****************
+.my_button{
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    border-color: $main_color;
+    background-color: transparent;
+    color:white;
+}
+
+.full_button {
+    background-color:$main_color;
+    color: white;
+    border: none;
+}
+
+.text_green{
+    color: $main_color;
+}
+
+.full_on_hover:hover{
+    background-color: $main_color;
+    color: white;
+}
+.full_on_hover_light:hover{
+    padding: 0 0.8rem;
+    border-radius: 6px;
+    background-color: $title_bg;
+    cursor: pointer;
+}
+.full_on_hover_light{
+    padding: 0 0.8rem;
+    border-radius: 6px;
+}
+
+// *******************Links Settings*****************
+.link:hover {
+    color:$main_color;
+}
+
+.link{
+    text-decoration: none;
+    padding: 1rem;
+    color: $link_color;
+}
