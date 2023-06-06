@@ -29,10 +29,13 @@ export default {
       </div>
       <div class="right_nav d-flex">
         <ul class="d-flex list-unstyled">
-          <li v-for="contact in contacts">
-            <i :class="contact.iconClass"></i>
-            <a class="link" href="">{{ contact.contact }}</a>
-          </li>
+          <template v-for="contact in contacts">
+            <!-- escludo il primo contatto -->
+            <li v-if="contact != contacts[0]">
+              <i :class="contact.iconClass"></i>
+              <a class="link" href="">{{ contact.contact }}</a>
+            </li>
+          </template>
         </ul>
         <ul class="d-flex list-unstyled">
           <li><a class="link" href=""><i class="fa-brands fa-facebook-f"></i></a></li>

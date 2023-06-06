@@ -17,11 +17,6 @@ export default {
     filterProjects(query) {
       console.log(query)
       let result = this.store.projects.filter((el, i) => {
-        el.category.forEach(element => {
-          element
-
-
-        });
         if (query == el.category) {
           return el
         } else if (query == 1) {
@@ -86,6 +81,7 @@ export default {
   text-align: center;
 
   .project_card_container {
+    justify-content: center;
     gap: 1rem;
 
     .project_card {

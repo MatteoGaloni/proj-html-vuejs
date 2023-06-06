@@ -1,21 +1,17 @@
 <script>
+import { isSVGTag } from "@vue/shared";
 import { store } from "../data/store"
 
 export default {
   name: "Services",
-
-  props: {
-
-  },
-
+  props: {},
   data() {
     return {
       store
-    }
+    };
   },
-
-  methods: {
-  }
+  methods: {},
+  components: { isSVGTag }
 }
 </script>
 
