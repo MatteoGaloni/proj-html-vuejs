@@ -5,32 +5,32 @@ export const store = reactive({
   servicesList: [
     {
       service: "Audit & Assurance",
-      icon: "./src/assets/images/svg/svg-1.svg",
+      icon: "svg-1.svg",
       overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
     },
     {
       service: "Financial advisory",
-      icon: "./src/assets/images/svg/svg-2.svg",
+      icon: "svg-2.svg",
       overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
     },
     {
       service: "Analytics and M&A",
-      icon: "./src/assets/images/svg/svg-3.svg",
+      icon: "svg-3.svg",
       overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
     },
     {
       service: "Middle Marketing",
-      icon: "./src/assets/images/svg/svg-4.svg",
+      icon: "svg-4.svg",
       overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
     },
     {
       service: "Legal Consulting",
-      icon: "./src/assets/images/svg/svg-5.svg",
+      icon: "svg-5.svg",
       overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
     },
     {
       service: "Regulatory Risk",
-      icon: "./src/assets/images/svg/svg-6.svg",
+      icon: "svg-6.svg",
       overview: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
     },
   ],
@@ -97,32 +97,32 @@ export const store = reactive({
   projects: [
     {
       title: "Academic Professional in Social Media",
-      backgroundImg: "./src/assets/images/img/project-1.jpg",
+      backgroundImg: "project-1.jpg",
       category: 2,
     },
     {
       title: "President speech at the annual meeting",
-      backgroundImg: "./src/assets/images/img/project-2.jpg",
+      backgroundImg: "project-2.jpg",
       category: 3,
     },
     {
       title: "International business trip in Shanghai",
-      backgroundImg: "./src/assets/images/img/project-3.jpg",
+      backgroundImg: "project-3.jpg",
       category: 4,
     },
     {
       title: "Tecnology workshop with education theme",
-      backgroundImg: "./src/assets/images/img/project-4.jpg",
+      backgroundImg: "project-4.jpg",
       category: 5,
     },
     {
       title: "Donation of clothes and food to the partner NGO",
-      backgroundImg: "./src/assets/images/img/project-5.jpg",
+      backgroundImg: "project-5.jpg",
       category: 6,
     },
     {
       title: "Confraternization of the procurement team",
-      backgroundImg: "./src/assets/images/img/project-6.jpg",
+      backgroundImg: "project-6.jpg",
       category: 7,
     },
   ],
@@ -145,12 +145,12 @@ export const store = reactive({
     },
   ],
   sponsorsLogoPath: [
-    "./src/assets/images/img/logo-4.png",
-    "./src/assets/images/img/logo-5.png",
-    "./src/assets/images/img/logo-1.png",
-    "./src/assets/images/img/logo-2.png",
-    "./src/assets/images/img/logo-3.png",
-    "./src/assets/images/img/logo-4.png",
+    "logo-4.png",
+    "logo-5.png",
+    "logo-1.png",
+    "logo-2.png",
+    "logo-3.png",
+    "logo-4.png",
   ],
   supportLinks: [
     "Responsability",

@@ -10,7 +10,11 @@ export default {
       store
     };
   },
-  methods: {},
+  methods: {
+    getImageUrl(name) {
+      return new URL(`../assets/images/svg/${name}`, import.meta.url).href
+    },
+  },
   components: { isSVGTag }
 }
 </script>
@@ -31,7 +35,7 @@ export default {
       <div id="services_cards_container" class="d-flex justify-content-between flex-wrap">
         <div v-for="item in this.store.servicesList" class="service_card">
           <div class="d-flex justify-content-between">
-            <img class="service_icon" :src="item.icon" alt="">
+            <img class="service_icon" :src="getImageUrl(item.icon)" alt="">
             <i class="my_arrow fa-solid fa-arrow-right"></i>
           </div>
           <h3 class="">{{ item.service }}</h3>

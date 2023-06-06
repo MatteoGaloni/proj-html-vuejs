@@ -14,6 +14,12 @@ export default {
   },
 
   methods: {
+    getImageUrl(name) {
+      return new URL(`../assets/images/img/${name}`, import.meta.url).href
+    },
+
+
+
     filterProjects(query) {
       console.log(query)
       let result = this.store.projects.filter((el, i) => {
@@ -49,7 +55,7 @@ export default {
       </div>
       <div id="projects_fiter">
         <ul class="d-flex justify-content-around list-unstyled">
-          <li v-for="item in this.store.actionsCategories">
+          <li class="fw-bold" v-for="item in this.store.actionsCategories">
             <div class="projects_title full_on_hover_light">
               <span @click="filterProjects(item.category)">{{ item.action }}</span>
             </div>
@@ -58,7 +64,7 @@ export default {
       </div>
       <div class="project_card_container d-flex flex-wrap">
         <div v-for="(project) in this.projectArray" class="project_card"
-          :style="{ backgroundImage: 'url(' + project.backgroundImg + ')' }">
+          :style="{ backgroundImage: 'url(' + getImageUrl(project.backgroundImg) + ')' }">
           <div>
             <i class="arrow_container fa-solid fa-arrow-right"></i>
           </div>

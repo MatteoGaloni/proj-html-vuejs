@@ -12,10 +12,9 @@ export default {
   },
 
   methods: {
-    // filterProjects() {
-    //   console.log("ciao")
-
-    // }
+    getImageUrl(name) {
+      return new URL(`../assets/images/img/${name}`, import.meta.url).href
+    },
   }
 }
 
@@ -25,7 +24,7 @@ export default {
   <div id="sponsors_container">
     <div class="my_container d-flex justify-content-between">
       <div v-for="logo in this.store.sponsorsLogoPath">
-        <img class="logo_img" :src="logo" alt="#">
+        <img class="logo_img" :src="getImageUrl(logo)" alt="#">
       </div>
     </div>
   </div>

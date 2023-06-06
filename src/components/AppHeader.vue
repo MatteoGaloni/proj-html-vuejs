@@ -80,7 +80,6 @@ header {
   .general_container {
     background: white;
 
-
     #nav_bar {
       padding: 1.5rem 0;
       width: 100%;
@@ -95,8 +94,11 @@ header {
         a {
           color: black;
         }
-      }
 
+        a:hover {
+          color: $main_color;
+        }
+      }
     }
   }
 }

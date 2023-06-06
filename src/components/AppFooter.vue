@@ -79,7 +79,9 @@ export default {
           <span>Enjoy the low price. We are tracking any intention of piracy.</span>
         </div>
         <div class="right_nav d-flex">
-          <span>2020 NEXGEN is proudly Powered by Codings</span>
+          <span>2020 NEXGEN is proudly Powered by</span>
+          <span class="ms-1 my_small_title">Codings.</span>
+
         </div>
       </div>
     </div>
