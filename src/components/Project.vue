@@ -65,6 +65,8 @@ export default {
       <div class="project_card_container d-flex flex-wrap">
         <div v-for="(project) in this.projectArray" class="project_card"
           :style="{ backgroundImage: 'url(' + getImageUrl(project.backgroundImg) + ')' }">
+          <div class="blurImg">
+          </div>
           <div>
             <i class="arrow_container fa-solid fa-arrow-right"></i>
           </div>
@@ -100,7 +102,18 @@ export default {
       justify-content: space-between;
       color: white;
       padding: 2rem;
+      position: relative;
 
+
+      .blurImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        z-index: -1;
+      }
 
       .arrow_container {
         font-size: 1.6rem;

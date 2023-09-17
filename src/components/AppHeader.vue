@@ -23,12 +23,12 @@ export default {
 <template>
   <header>
     <!-- top notification bar -->
-    <div id="top_bar" class="my_container d-flex justify-content-between">
+    <div id="top_bar" class="my_container d-flex justify-content-between py-3">
       <div class="left_nav">
         <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
       </div>
       <div class="right_nav d-flex">
-        <ul class="d-flex list-unstyled">
+        <ul class="d-flex list-unstyled m-0">
           <template v-for="contact in contacts">
             <!-- escludo il primo contatto -->
             <li v-if="contact != contacts[0]">
@@ -37,7 +37,7 @@ export default {
             </li>
           </template>
         </ul>
-        <ul class="d-flex list-unstyled">
+        <ul class="d-flex list-unstyled m-0">
           <li><a class="link" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
           <li><a class="link" href=""><i class="fa-brands fa-twitter"></i></a></li>
           <li><a class="link" href=""><i class="fa-brands fa-instagram"></i></a></li>

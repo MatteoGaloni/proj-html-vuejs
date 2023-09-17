@@ -24,7 +24,7 @@ export default {
   },
 
   props: {
-    contacts: Object,
+    contacts: Array,
   },
 
   data() {

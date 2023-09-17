@@ -16,10 +16,6 @@ export default {
   },
 
   methods: {
-    // filterProjects() {
-    //   console.log("ciao")
-
-    // }
   }
 }
 </script>

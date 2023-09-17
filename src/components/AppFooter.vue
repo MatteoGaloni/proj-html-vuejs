@@ -5,7 +5,7 @@ export default {
   name: "AppFooter",
 
   props: {
-    contacts: Object,
+    contacts: Array,
   },
 
   data() {
